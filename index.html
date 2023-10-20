@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vivian</title>
+    <style>
+        body {
+            margin: 0;
+            overflow:hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:cadetblue;
+            position: relative;
+        }
+
+        .info {
+            text-align:left;
+            padding: 20px;
+            background-color:;
+            color: aliceblue;
+            border-radius: 10px;
+            position: inherit;
+            z-index: 2;
+        }
+
+        .circles {
+            position:relative ;
+            width: 50%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            position:absolute;
+            animation: moveUpDown 5s linear infinite;
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY();
+            }
+            50% {
+                transform: translateY(calc(100vh - 50px));
+            }
+        }
+
+        /* Añade más círculos */
+        .circle:nth-child(2) {
+            left: 20%;
+            animation-duration: 4s;
+        }
+
+        .circle:nth-child(3) {
+            left: 40%;
+            animation-duration: 3s;
+        }
+
+        .circle:nth-child(4) {
+            left: 60%;
+            animation-duration: 5s;
+        }
+        .circle:nth-child(5) {
+            left: 60%;
+            animation-duration: 5s;
+        }
+        .circle:nth-child(6) {
+            left: 60%;
+            animation-duration: 6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Vivian</h1>
+        <p>BIENVENIDOS A MI PAGINA WEB DE GLOBOS ANIMADOS </p>
+         <p>¡ ESPERO Y LES GUSTE !</p>
+
+    </div>
+    <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        
+        <!-- Agrega más círculos aquí -->
+    </div>
+</body>
+</html>
